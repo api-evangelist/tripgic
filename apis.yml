@@ -1,28 +1,120 @@
 aid: tripgic
+
 name: Tripgic
-description: 'Tripgic is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.tripgic.com/assets/og-image.png
+
+description: Tripgic provides a unified travel API platform aggregating flights, hotels, tours, transfers, car rentals, and more. Their API offers
+  access to GDS and NDC flight data, over 2 million hotel properties, activity tickets, and ancillary services, enabling developers to build comprehensive
+  travel booking solutions. The company emphasizes extensive coverage, flexible integration, and support for various travel partners.
+
 url: https://raw.githubusercontent.com/api-evangelist/tripgic/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-15 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-15'
+
 modified: '2026-10-15'
+
 tags:
 - Company
-apis: []
+- Travel
+- API
+- Booking
+- Aggregator
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/tripgic-plans-pricing.yml
+- type: Spectral
+  url: rules/tripgic-rules.yml
+- type: JSONLD
+  url: json-ld/tripgic-context.jsonld
+- type: Vocabulary
+  url: vocabulary/tripgic-vocabulary.yml
+- type: DataModel
+  url: data-model/tripgic-data-model.yml
+- type: ChangeLog
+  url: changelog/tripgic-changelog.yml
+- type: Compliance
+  url: https://www.tripgic.com/security.html
+- type: Security
+  url: security/tripgic-vulnerability-disclosure.yml
+- type: Conformance
+  url: conformance/tripgic-conformance.yml
+- type: LLMsTxt
+  url: llms/tripgic-llms.txt
+- type: Hosts
+  url: hosts/tripgic-hosts.yml
+- type: Vendors
+  url: vendors/tripgic-vendors.yml
+- type: TermsOfService
+  url: https://www.tripgic.com/terms.html
+- type: DeveloperPortal
+  url: https://developer.tripgic.com/doc/
+- type: TrustCenter
+  url: security/tripgic-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/tripgic-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/tripgic-domain-security.yml
 - type: Website
   url: https://www.tripgic.com/
 - type: Documentation
   url: https://www.tripgic.com/docs.html
+- type: APIReference
+  url: https://www.tripgic.com/docs.html
+- type: Pricing
+  url: https://www.tripgic.com/pricing.html
+- type: PrivacyPolicy
+  url: https://www.tripgic.com/privacy.html
+- type: Support
+  url: https://www.tripgic.com/contact.html
+
+apis:
+- aid: tripgic:tripgic-api
+  name: Tripgic API
+  description: 'Tripgic API as documented publicly: 8 operations. Contract generated from the documentation by API Evangelist (2026-10-15); not
+    the provider''s own document.'
+  humanURL: https://www.tripgic.com/docs.html
+  baseURL: https://YOUR_BASE_URL
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/tripgic-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/tripgic-post-flight-flightid-response-schema.json
+
 x-submission-notes: Unified travel API (GDS/NDC); no public OpenAPI; division of Innovate Solution
+
 x-submission-probe: root 200, docs.html 200, soft-404 OK
+
 x-submitted-by: omar@innovatesolution.com (apis.io/add, 2026-10-14)
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Swagger UI at developer.tripgic.com renders API docs but provides no machine‑readable OpenAPI spec.
+  evidence:
+  - url: https://developer.tripgic.com/swagger/?urls.primaryName=Flight
+    status: 200
+  checked: '2026-10-15'
+x-enrichment:
+  date: '2026-10-15'
+  status: enriched
+  artifacts_added: 19
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

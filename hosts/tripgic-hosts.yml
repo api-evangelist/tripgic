@@ -1,0 +1,74 @@
+generated: '2026-10-15'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 4
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - portal
+  - sandbox
+  - website
+hosts:
+- host: api.tripgic.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: tripgic.com
+  role: api
+  relation: own
+- host: developer.tripgic.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  serves:
+  - docs
+  registrable_domain: tripgic.com
+  role: portal
+  relation: own
+- host: sandbox.tripgic.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: tripgic.com
+  role: sandbox
+  relation: own
+- host: www.tripgic.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Compliance
+  - TermsOfService
+  - Website
+  - Documentation
+  - APIReference
+  - Pricing
+  - PrivacyPolicy
+  - Support
+  serves:
+  - docs
+  - cdn
+  vendor: cloudflare
+  registrable_domain: tripgic.com
+  role: website
+  relation: own

@@ -1,0 +1,6 @@
+generated: '2026-10-15'
+method: probed
+generator: harvest-llms.py
+source: https://www.tripgic.com/llms.txt
+bytes: 19265
+note: saved verbatim; the provider's own document

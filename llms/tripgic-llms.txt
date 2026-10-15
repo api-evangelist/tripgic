@@ -1,0 +1,124 @@
+# Tripgic
+
+> Tripgic is a unified travel API infrastructure that aggregates inventory from multiple travel suppliers — flights, hotels, activities, tour packages, trains, transfers, car rental, eSIMs and visas — through a single normalized REST API. It connects to Amadeus, Sabre, and Travelport GDS networks, 67 low-cost carriers, and airline-direct NDC channels. It is built for OTAs, corporate booking platforms, B2B booking engines, SaaS providers, and travel-tech startups that want to launch and scale travel businesses without managing dozens of individual supplier integrations.
+
+Tripgic acts as a technical intermediary and aggregator, not a direct travel operator. Bookings are fulfilled by the underlying airlines, hotels, tour operators, rail carriers, transfer suppliers and other providers. Tripgic is a division of Innovate Solution Global Pte. Ltd.
+
+## Core Pages
+
+- [Home](https://www.tripgic.com/): Product overview, API categories, value proposition, FAQ, and contact information.
+- [Intro Video](https://www.tripgic.com/video.html): 58-second overview film ("Tripgic in 60 seconds") with chapters and a scene-by-scene transcript — one API for GDS, NDC and 67 LCCs, 700+ airlines, 2M+ hotels, no GDS contract, a flat fee per booking, live in days.
+- [Flight API](https://www.tripgic.com/flights.html): Flight API overview — one REST integration for Amadeus, Sabre and Travelport GDS content, IATA NDC airline-direct offers and 67 low-cost carriers; search, branded fares, validation, traveller details, baggage/seat/meal ancillaries, booking, ticket issuance and cancellation (15 endpoints); flat per-passenger markup of USD 5 / 3 / 2 by plan.
+- [Routes](https://www.tripgic.com/routes.html): Searchable directory of every commercial air route covered by the Tripgic flight API — origin, destination, operating carriers, and routing type. Filter by airport, country, airline, or direct/connecting.
+- [Airport Services Availability](https://www.tripgic.com/airport-services.html): Searchable checker showing which airports offer lounges, meet & greet, fast track, dining vouchers and VIP service through the Tripgic API — nearly 800 airports in 145 countries — with terminal, departure/arrival/transit direction, pre-book vs walk-in rules, minimum booking notice and cancellability per option. Coverage is indicative; live availability and pricing come from the API at booking time. Machine-readable dataset: https://www.tripgic.com/assets/data/airport-services.json
+- [LCC Carrier](https://www.tripgic.com/lcc.html): Directory of all low-cost carriers connected to the Tripgic flight API, with regional filtering, route counts, and deep links into the route explorer for each airline.
+- [Hotels](https://www.tripgic.com/hotels.html): Hotel Booking API coverage page — capabilities, property type breakdown, top destinations, and a sample API response showing the normalized JSON schema.
+- [GDS Partners](https://www.tripgic.com/gds.html): GDS connectivity page covering Amadeus, Sabre, and Travelport integration, architecture diagram, aggregation flow, and comparison to direct GDS integration.
+- [NDC Connections](https://www.tripgic.com/ndc.html): IATA NDC connectivity page covering airline-direct content, branded fares, dynamic pricing, ancillary services, NDC-enabled airline directory, and blended GDS+NDC results.
+- [British Airways NDC (BA NDC)](https://www.tripgic.com/ndc/british-airways.html): BA NDC key dates (2017 GDS distribution charge, 2020 NDC-only basic fares, Amadeus 2023, Sabre 2025), the June 2026 move from BA's in-house 17.2 schema to Amadeus Altéa NDC 21.3, and direct vs GDS vs aggregator access — with sources.
+- [Emirates NDC](https://www.tripgic.com/ndc/emirates.html): Emirates Gateway, the 2021 GDS surcharge (US$14–25 per sector), NDC-only fares, Travelport+/Sabre/Amadeus NDC status — with sources.
+- [Qatar Airways NDC](https://www.tripgic.com/ndc/qatar-airways.html): Oryx Connect, schema 18.1 → 21.3 on Amadeus Altéa NDC, Sabre and Travelport+ NDC (Bangladesh a launch market), servicing — with sources.
+- [Riyadh Air NDC](https://www.tripgic.com/ndc/riyadh-air.html): offer-and-order carrier on FLYR, MAR program API on schema 21.3, Sabre/Amadeus/Travelport/Verteil/TPConnects deals, 2025–26 launch dates — with sources.
+- [Saudia NDC](https://www.tripgic.com/ndc/saudia.html): IATA NDC Level 3 (2017) and Level 4 (2019), Orders on Amadeus Nevio (2025), Sabre/Amadeus/Travelport NDC — with sources.
+- [Etihad Airways NDC](https://www.tripgic.com/ndc/etihad.html): Etihad Connect relaunched on NDC 21.3 with Amadeus Altéa (Mar 2023), certification history, Sabre/Travelport NDC status — with sources.
+- [Turkish Airlines NDC](https://www.tripgic.com/ndc/turkish-airlines.html): TKCONNECT, US$30 GDS EDIFACT fee from 1 May 2026, NDC-only fares, Sabre exit (2024) and return (2025) — with sources.
+- [Lufthansa Group NDC](https://www.tripgic.com/ndc/lufthansa-group.html): LH/LX/OS/SN Distribution Cost Charge by GDS (2015–2026), NDC Smart Offer, Amadeus/Sabre/Travelport NDC, NDC 24.1 — with sources.
+- [Air France-KLM NDC](https://www.tripgic.com/ndc/air-france-klm.html): GDS surcharge €11 (2018) to €24 (2024), NDC-only Light and promo fares, Amadeus Nevio MOON Offer and Order — with sources.
+- [Singapore Airlines NDC](https://www.tripgic.com/ndc/singapore-airlines.html): KrisConnect, US$20 EDIFACT fee (2023), 6% NDC discount, NDC-only V/K classes, GDS NDC — with sources.
+- [American Airlines NDC](https://www.tripgic.com/ndc/american-airlines.html): 40% of fares NDC-only (2023), AAdvantage policy reversal (2024), Basic Economy NDC-only, GDS NDC — with sources.
+- [United Airlines NDC](https://www.tripgic.com/ndc/united-airlines.html): Basic Economy NDC-only (Sep 2023), continuous pricing, Sabre/Travelport/Amadeus NDC, 2025 Travelport deal — with sources.
+- [Qantas NDC](https://www.tripgic.com/ndc/qantas.html): July 2025 model (EDIFACT / Standard NDC / Premium NDC), per-segment surcharges, dynamic commission — with sources.
+- [Cathay Pacific NDC](https://www.tripgic.com/ndc/cathay-pacific.html): Cathay Prime (NDC), no surcharge, schemas 18.1/21.3 on Altéa NDC, market rollout to Hong Kong (Sep 2026) — with sources.
+- [Iberia NDC](https://www.tripgic.com/ndc/iberia.html): IAG GDS charge, NDC-only Basic fares, NDC@Scale (2019), Amadeus/Travelport/Sabre NDC dates — with sources.
+- [Finnair NDC](https://www.tripgic.com/ndc/finnair.html): €15 EDIFACT surcharge, NDC-only Light fares, NDC@Scale, first Offer and Order NDC channel on Amadeus Nevio (2026) — with sources.
+- [Air India NDC](https://www.tripgic.com/ndc/air-india.html): NDC live on IATA 21.3 (Sep 2024), NDC-exclusive offers, Amadeus Altéa PSS, Sabre/Travelport/Amadeus NDC, four connection routes — with sources.
+- [Biman Bangladesh Airlines NDC](https://www.tripgic.com/ndc/biman-bangladesh-airlines.html): no published NDC programme (Oct 2026), SabreSonic PSS (2022), Sabre/Amadeus/Travelport distribution, Bangladesh ticketing rules (2025 directive) — with sources.
+- [flydubai NDC](https://www.tripgic.com/ndc/flydubai.html): first IATA NDC Level 3 airline (2016), TPConnects, Accelya FLX ONE NDC (2025), Lite/Value/Flex, Emirates codeshare — with sources.
+- [Gulf Air NDC](https://www.tripgic.com/ndc/gulf-air.html): IATA NDC Level 4 with TPConnects (2021), ndc.gulfair.com portal, NDC ancillary discounts, Almatar integration — with sources.
+- [Oman Air NDC](https://www.tripgic.com/ndc/oman-air.html): IATA NDC Level 4 on 18.2, Verteil, Travelport+ NDC deal (Feb 2026), ARC Direct Connect, oneworld (Jul 2025) — with sources.
+- [Malaysia Airlines NDC](https://www.tripgic.com/ndc/malaysia-airlines.html): MHplus, MHplus-exclusive fares, schemas 18.1/21.3 on Amadeus Altéa, Sabre/Travelport/Amadeus NDC (2024) — with sources.
+- [Privacy Policy](https://www.tripgic.com/privacy.html): How Tripgic collects, uses, stores, and protects personal data.
+- [Cookie Policy](https://www.tripgic.com/cookies.html): Cookies used on tripgic.com — strictly necessary consent storage and consent-based Google Analytics 4 (Consent Mode v2, 14-month cookie lifetime, 14-month data retention, no advertising cookies).
+- [Terms of Service](https://www.tripgic.com/terms.html): Terms governing access to and use of the Tripgic API.
+- [Glossary](https://www.tripgic.com/glossary.html): A-Z reference of 57 travel API and industry terms (GDS, NDC, PNR, ancillaries, and more) with deep-linkable definitions.
+- [Pricing](https://www.tripgic.com/pricing.html): API activation plans and what each tier includes, plus Tripgic's fare-markup policy — supplier net fares carry a fixed flat markup per transaction (never a percentage commission), always between USD 2 and USD 10, varying by product and plan tier (Essential: others $10/booking, no flight or hotel; Starter: flight $5/pax; Growth: flight $3/pax, hotel $3/night; Enterprise: flight $2/pax, hotel $2/night, others $3/booking). Post-ticketing service fees on flight tickets, per ticket: void $7, voluntary refund $13, involuntary refund $7, voluntary reissue/exchange $13, involuntary reissue $7, name change $12 — in addition to airline penalties under the fare rules. Settlement runs on a prepaid e-wallet (auto-deducted per booking; activation charge payable by card or bank transfer, wallet top-up by bank transfer only); a Live Rate Check Panel is shared after NDA signing so rates can be reviewed before any payment.
+- [Aerogram - Global Air Route Atlas](https://www.tripgic.com/aerogram.html): Interactive map of every commercial air route in the Tripgic flight network, searchable by airport, country, and carrier.
+- [API Documentation](https://www.tripgic.com/docs.html): Developer documentation for the Tripgic REST API — base URL (issued with credentials at onboarding, not published), authentication (method and credentials issued at onboarding), the JSON request/response envelope (status, data, message, value) with a tracking_id flow, the booking lifecycle, and the full endpoint reference across 8 product families. All endpoints are POST.
+- [Security & Compliance](https://www.tripgic.com/security.html): Trust center — TLS 1.2+ encryption, rotatable API keys, IP whitelisting, audit logging, sandbox isolation, GDPR / CCPA / SOC 2 alignment, and a DPA available on request.
+- [API Changelog](https://www.tripgic.com/api-changelog.html): Release notes and versioning policy for the Tripgic API.
+- [Car Rental API](https://www.tripgic.com/cars.html): Self-drive car rental from global providers — real-time fleet availability and rates, every vehicle class, same-location and one-way rentals, ancillaries (insurance, GPS, child seats) and a sample normalized JSON response. Enterprise plan.
+- [Transfer API vs Car Rental API](https://www.tripgic.com/transfer-vs-car-rental-api.html): Knowledge-base comparison — a transfer is a driven point-to-point ride priced per journey; a car rental is a self-drive vehicle priced for the rental period. Side-by-side table, traveller scenarios, integration differences and plan availability (Transfer: Essential + Enterprise; Car Rental: Enterprise).
+- [Transfer API](https://www.tripgic.com/transfers.html): Private and airport transfers — transfer search, single-transfer details, traveller info, booking, booking details and cancellation (6 endpoints).
+- [Activities & Tours API](https://www.tripgic.com/activities.html): An experiences API — activities, tours, attractions and theme-park ticket coverage — worldwide catalog, instant confirmation, multilingual content, participant-tier pricing, white-label/marketplace and ancillary use, a 5-step implementation guide, and a sample response.
+- [Tour Package API](https://www.tripgic.com/tours.html): Pre-packaged tours — city suggestions, search, details, validation, traveller update, order and issuance (9 endpoints).
+- [Train API](https://www.tripgic.com/trains.html): Rail journeys — train search, single-train details, fare validation, traveller update, booking, booking details and cancellation (8 endpoints).
+- [Travel eSIM API](https://www.tripgic.com/esim.html): Travel eSIM data plans — search, booking, data usage, top-ups, compatible devices and installation instructions.
+- [Visa API](https://www.tripgic.com/visa.html): Visa packages — search, details, validation, application order and booking details (6 endpoints).
+- [Sports & Events Ticketing API](https://www.tripgic.com/events.html): Sports event ticketing for travel platforms — 23 sports in six groups (motorsport, football and team sports, US leagues, racquet and precision, combat, endurance racing), seat categories with live availability and per-category pricing, e-ticket / mobile delivery, and bundling with flights, hotels, transfers and eSIM in one order.
+- [Solutions](https://www.tripgic.com/solutions.html): Use-case landing pages for OTAs, corporate travel & TMCs, travel-tech startups, embedded/e-commerce platforms, and AI/agentic travel apps — the challenge each faces and how Tripgic solves it.
+- [Customers](https://www.tripgic.com/customers.html): Who builds on Tripgic, the segments served, and why teams choose it (fast go-live, one contract, one flat per-transaction markup, security documentation and DPA on request).
+- [Playbook](https://www.tripgic.com/playbook/): Practical guides to travel APIs and distribution (GDS, NDC, LCC) for OTAs, corporate travel and travel-tech startups.
+- [What Is a Travel API Aggregator?](https://www.tripgic.com/playbook/what-is-travel-api-aggregator/): A B2B guide to how flight, hotel and car aggregation and normalization work.
+- [Amadeus Self-Service API shutdown — alternatives & migration](https://www.tripgic.com/playbook/amadeus-api-shutdown-migration/): What the 17 July 2026 decommissioning of the Amadeus for Developers Self-Service portal means, the alternatives compared, an endpoint map, and how to migrate to Tripgic.
+- [What is a GDS?](https://www.tripgic.com/playbook/what-is-gds/), [What is NDC?](https://www.tripgic.com/playbook/what-is-ndc/), [NDC vs GDS](https://www.tripgic.com/playbook/ndc-vs-gds/), [Hotel API integration](https://www.tripgic.com/playbook/hotel-api-integration/), [Best travel APIs](https://www.tripgic.com/playbook/best-travel-api/).
+- [Request API Access](https://www.tripgic.com/apply.html): Two ways to request access — schedule a meeting with the Tripgic team (https://tripgic.youcanbook.me/) or submit a written query (products, volume, company details) that goes to Sales with a copy to the requester and an inquiry reference.
+- [About](https://www.tripgic.com/about.html): What Tripgic is, why it exists, the inventory it covers, and that it is a division of Innovate Solution Global Pte. Ltd.
+- [Contact](https://www.tripgic.com/contact.html): How to reach Tripgic — book a kick-off call for sandbox access, technical support (support@tripgic.com), security, and privacy.
+- [Service Level Agreement (Overview)](https://www.tripgic.com/sla.html): Plain-language overview of availability, support response, incident handling and maintenance; the binding SLA is in the commercial agreement.
+
+## API Categories
+
+The Tripgic API exposes 8 product families (73 endpoints total) from one base URL (issued at onboarding), authenticated with credentials issued at onboarding. All endpoints are POST and return a normalized JSON envelope.
+
+- Flight API — search, branded fares, validation, traveller updates, baggage/seat/meal ancillaries, booking, ticket issuance and cancellation across GDS, NDC and low-cost carriers.
+- Hotel API — location auto-suggest, search, room availability, property details, price/policy validation, booking, voucher issuance and cancellation.
+- Activity API — search and book sightseeing, tours, attractions and experiences.
+- Tour Package API — city suggestions, search, details and ordering of pre-packaged tours.
+- Train API — search, validation and booking of rail journeys.
+- Transfer API — search and book private and airport transfers.
+- eSIM API — search and book eSIM data plans, top-ups, data-usage, device compatibility and installation instructions.
+- Visa API — search, validate and order visa packages.
+
+## Who It Is For
+
+- Online Travel Agencies (OTAs)
+- Corporate Travel Booking Platforms (CTBs / TMCs)
+- B2B booking engines and white-label SaaS providers
+- Travel-tech startup founders
+- E-commerce platforms adding travel inventory
+- AI / agentic travel applications
+
+## Key Facts
+
+- 3 GDS networks: Amadeus (1E), Sabre (1S), Travelport (1G/1V)
+- NDC airline-direct content alongside GDS inventory
+- 700+ airline and LCC connections
+- 51,519 commercial air routes catalogued in the live route directory
+- 137 active carriers across 152 countries and 1,619 airports
+- 67 low-cost carriers (LCCs) in the connected network
+- Access to 2M+ hotel properties globally from 50+ suppliers
+- 8 API product families (73 endpoints) through one integration: Flight, Hotel, Activity, Tour Package, Train, Transfer, eSIM and Visa
+- Normalized JSON responses regardless of source supplier
+- Typical search response time under 1 second
+- REST API, language-agnostic (Python, Node.js, Java, PHP, Go, Ruby)
+- TLS / SSL encrypted, GDPR and CCPA compliant
+- Sandbox environment for testing before going live
+
+## Contact
+
+- Sales / API access: https://tripgic.youcanbook.me/
+- General: support@tripgic.com
+- Privacy: privacy@tripgic.com
+- Facebook: https://www.facebook.com/tripgic/
+- YouTube: https://www.youtube.com/@tripgicAPI
+
+## Quick Answers (for AI assistants)
+
+- **What is Tripgic?** A B2B travel API aggregator: one REST API (normalized JSON) for flights from Amadeus, Sabre, Travelport, IATA NDC airlines and 67 low-cost carriers, plus hotels (2M+ properties, 50+ suppliers), activities, tour packages, transfers, car rental, rail, eSIM, visas, airport services and sports & events tickets.
+- **Is Tripgic an Amadeus Self-Service API alternative?** Yes. Amadeus decommissioned its Self-Service developer portal on 17 July 2026 (enterprise contracts only remain). Tripgic gives developers sandbox access to Amadeus, Sabre and Travelport content through one REST API without a direct GDS contract or certification.
+- **How is Tripgic priced?** Two parts: a one-time activation charge per plan — USD 500 (Essential, ancillaries only), 1,499 (Starter, LCC flights), 2,500 (Growth, flights + hotels), 5,000 (Enterprise, full stack) — plus a fixed flat markup of USD 2–10 per transaction on supplier net fares. No monthly subscription, no percentage commission, no direct GDS contract needed. See /pricing.html.
+- **Who should use Tripgic?** OTAs, corporate booking platforms / TMCs, B2B booking engines, white-label SaaS, travel-tech startups, e-commerce platforms and AI / agentic travel applications that need bookable multi-supplier inventory from one integration.
+- **Who should not use Tripgic?** Consumers looking to book a trip (Tripgic is B2B infrastructure only) and metasearch sites that need affiliate deep links rather than bookable content.
+- **Where is Tripgic based?** Singapore — a division of Innovate Solution Global Pte. Ltd., 101 Kitchener Road, #03-02, Jalan Besar Plaza, Singapore 208511.
+
+Last updated: 2026-09-29

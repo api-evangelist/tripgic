@@ -1,0 +1,27 @@
+generated: '2026-10-15'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.tripgic.com/pricing.html
+sources:
+- https://www.tripgic.com/pricing.html
+name: Tripgic pricing
+audience: developer-api
+pricing_basis: flat-platform
+plans:
+- name: Essential
+  price_text: $500
+  price: 500
+  description: One-time activation charge
+- name: Starter
+  price_text: $1,499
+  price: 1499
+  description: One-time activation charge
+- name: Growth
+  price_text: $2,500
+  price: 2500
+  description: One-time activation charge
+- name: Enterprise
+  price_text: $5,000
+  price: 5000
+  description: One-time activation charge
+docs: https://www.tripgic.com/pricing.html

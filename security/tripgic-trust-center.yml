@@ -1,0 +1,14 @@
+generated: '2026-10-15'
+method: searched
+probe: true
+source: https://www.tripgic.com/security.html
+url: https://www.tripgic.com/security.html
+certifications:
+- SOC 2
+- GDPR
+evidence:
+- source: https://www.tripgic.com/security.html
+  keywords:
+  - soc 2
+  - trust center
+  - gdpr

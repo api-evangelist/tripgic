@@ -1,0 +1,35 @@
+generated: '2026-10-15'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.tripgic.com/api-changelog.html
+sources:
+- https://www.tripgic.com/api-changelog.html
+- https://www.tripgic.com/playbook/amadeus-api-shutdown-migration/
+entries:
+- breaking: false
+  highlights:
+  - Added eSIM API — search, packages, top-ups, data usage and installation instructions.
+  - Added Visa API — search, validation and order placement.
+  date: '2026-06-18'
+- breaking: false
+  highlights:
+  - Added Train API — search, validation and booking.
+  - Added Transfer API — private and airport transfers.
+  date: '2026-04-15'
+- breaking: false
+  highlights:
+  - Added Baggage, seat and meal selection on the Flight API.
+  - Added Branded-fare options for flight offers.
+  date: '2026-02-20'
+- breaking: false
+  highlights:
+  - Added Activity API for sightseeing and experiences.
+  - Added Tour Package API for pre-packaged tours.
+  date: '2025-12-10'
+- breaking: false
+  highlights:
+  - Added Flight API and Hotel API — search through booking, issuance and cancellation.
+  date: '2025-10-01'
+current_version: '1.0'
+note: 'Versioning scheme: additive, backward‑compatible changes released continuously; breaking changes introduced with advance notice.'
+docs: https://www.tripgic.com/api-changelog.html

@@ -1,0 +1,55 @@
+generated: '2026-10-15'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/tripgic-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: 'No MCP server was found. The pre-flight posted tools/list to /mcp on api.tripgic.com, www.tripgic.com, developer.tripgic.com, sandbox.tripgic.com;
+  verdict opaque (https://sandbox.tripgic.com/api/mcp answered 500: the edge authenticates before it routes, which proves nothing either way).
+  Candidate tools below are derived from the 8 operation(s) in the provider''s own OpenAPI (8 listed); they describe what a server WOULD expose,
+  not one that exists.'
+tools:
+- name: post_transfer_transferid
+  operationId: post_Transfer_transferid
+  method: POST
+  path: /Transfer/{transferid}
+  description: details Booking details
+- name: post_activity_activityid
+  operationId: post_activity_activityid
+  method: POST
+  path: /activity/{activityid}
+  description: Get booking details.
+- name: post_esim_esimid
+  operationId: post_esim_esimid
+  method: POST
+  path: /esim/{esimid}
+  description: Get booking details
+- name: post_flight_flightid
+  operationId: post_flight_flightid
+  method: POST
+  path: /flight/{flightid}
+  description: Booking details
+- name: post_hotel_hotelid
+  operationId: post_hotel_hotelid
+  method: POST
+  path: /hotel/{hotelid}
+  description: Get auto-suggestions for hotel search locations
+- name: post_service_tour_servicetourid
+  operationId: post_service_tour_servicetourid
+  method: POST
+  path: /service-tour/{servicetourid}
+  description: Get city suggestions for tours.
+- name: post_train_trainid
+  operationId: post_train_trainid
+  method: POST
+  path: /train/{trainid}
+  description: Get booking details
+- name: post_visa_visaid
+  operationId: post_visa_visaid
+  method: POST
+  path: /visa/{visaid}
+  description: Get booking details
