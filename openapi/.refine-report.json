@@ -1,0 +1,25 @@
+{
+  "provider": "tripgic",
+  "sources": [
+    "_ae-authored/tripgic-openapi-generated.yml"
+  ],
+  "outputs": [
+    "tripgic-activity-api-openapi.yml",
+    "tripgic-esim-api-openapi.yml",
+    "tripgic-flight-api-openapi.yml",
+    "tripgic-hotel-api-openapi.yml",
+    "tripgic-service-tour-api-openapi.yml",
+    "tripgic-train-api-openapi.yml",
+    "tripgic-transfer-api-openapi.yml",
+    "tripgic-visa-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "tripgic-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: written (+8 apis, 8 total)"
+  ],
+  "skipped": []
+}

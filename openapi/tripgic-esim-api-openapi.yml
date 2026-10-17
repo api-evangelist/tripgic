@@ -1,0 +1,42 @@
+openapi: 3.2.0
+info:
+  title: Tripgic Esim API
+  version: '2026-10-15'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-15: 8 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Tripgic has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 7
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-15'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://www.tripgic.com/docs.html
+servers:
+- url: https://YOUR_BASE_URL
+tags:
+- name: Esim
+paths:
+  /esim/{esimid}:
+    post:
+      operationId: post_esim_esimid
+      tags:
+      - Esim
+      summary: Get booking details
+      x-source: https://www.tripgic.com/docs.html
+      parameters:
+      - name: esimid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 11 example path(s) differing only at esimId

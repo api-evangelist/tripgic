@@ -85,19 +85,102 @@ common:
   url: https://www.tripgic.com/contact.html
 
 apis:
-- aid: tripgic:tripgic-api
-  name: Tripgic API
-  description: 'Tripgic API as documented publicly: 8 operations. Contract generated from the documentation by API Evangelist (2026-10-15); not
-    the provider''s own document.'
+- aid: tripgic:tripgic-activity-api
+  name: Tripgic Activity API
+  description: The Activity API from Tripgic — 1 operation(s) for activity.
   humanURL: https://www.tripgic.com/docs.html
   baseURL: https://YOUR_BASE_URL
+  tags:
+  - Activity
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/tripgic-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/tripgic-activity-api-openapi.yml
   - type: JSONSchema
     url: json-schema/tripgic-post-flight-flightid-response-schema.json
-
+- aid: tripgic:tripgic-esim-api
+  name: Tripgic Esim API
+  description: The Esim API from Tripgic — 1 operation(s) for esim.
+  humanURL: https://www.tripgic.com/docs.html
+  baseURL: https://YOUR_BASE_URL
+  tags:
+  - Esim
+  properties:
+  - type: OpenAPI
+    url: openapi/tripgic-esim-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/tripgic-post-flight-flightid-response-schema.json
+- aid: tripgic:tripgic-flight-api
+  name: Tripgic Flight API
+  description: The Flight API from Tripgic — 1 operation(s) for flight.
+  humanURL: https://www.tripgic.com/docs.html
+  baseURL: https://YOUR_BASE_URL
+  tags:
+  - Flight
+  properties:
+  - type: OpenAPI
+    url: openapi/tripgic-flight-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/tripgic-post-flight-flightid-response-schema.json
+- aid: tripgic:tripgic-hotel-api
+  name: Tripgic Hotel API
+  description: The Hotel API from Tripgic — 1 operation(s) for hotel.
+  humanURL: https://www.tripgic.com/docs.html
+  baseURL: https://YOUR_BASE_URL
+  tags:
+  - Hotel
+  properties:
+  - type: OpenAPI
+    url: openapi/tripgic-hotel-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/tripgic-post-flight-flightid-response-schema.json
+- aid: tripgic:tripgic-service-tour-api
+  name: Tripgic Service Tour API
+  description: The Service Tour API from Tripgic — 1 operation(s) for service tour.
+  humanURL: https://www.tripgic.com/docs.html
+  baseURL: https://YOUR_BASE_URL
+  tags:
+  - Service Tour
+  properties:
+  - type: OpenAPI
+    url: openapi/tripgic-service-tour-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/tripgic-post-flight-flightid-response-schema.json
+- aid: tripgic:tripgic-train-api
+  name: Tripgic Train API
+  description: The Train API from Tripgic — 1 operation(s) for train.
+  humanURL: https://www.tripgic.com/docs.html
+  baseURL: https://YOUR_BASE_URL
+  tags:
+  - Train
+  properties:
+  - type: OpenAPI
+    url: openapi/tripgic-train-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/tripgic-post-flight-flightid-response-schema.json
+- aid: tripgic:tripgic-transfer-api
+  name: Tripgic Transfer API
+  description: The Transfer API from Tripgic — 1 operation(s) for transfer.
+  humanURL: https://www.tripgic.com/docs.html
+  baseURL: https://YOUR_BASE_URL
+  tags:
+  - Transfer
+  properties:
+  - type: OpenAPI
+    url: openapi/tripgic-transfer-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/tripgic-post-flight-flightid-response-schema.json
+- aid: tripgic:tripgic-visa-api
+  name: Tripgic Visa API
+  description: The Visa API from Tripgic — 1 operation(s) for visa.
+  humanURL: https://www.tripgic.com/docs.html
+  baseURL: https://YOUR_BASE_URL
+  tags:
+  - Visa
+  properties:
+  - type: OpenAPI
+    url: openapi/tripgic-visa-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/tripgic-post-flight-flightid-response-schema.json
 x-submission-notes: Unified travel API (GDS/NDC); no public OpenAPI; division of Innovate Solution
 
 x-submission-probe: root 200, docs.html 200, soft-404 OK
