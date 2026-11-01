@@ -64,5 +64,125 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Tripgic is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
-- https://www.tripgic.com/
+Tripgic provides a unified travel API platform aggregating flights, hotels, tours, transfers, car rentals, and more. Their API offers access to GDS and NDC flight data, over 2 million hotel properties, activity tickets, and ancillary services, enabling developers to build comprehensive travel booking solutions. The company emphasizes extensive coverage, flexible integration, and support for various travel partners.
+
+**Areas:** Company · Travel · Booking · Aggregator
+
+## Tripgic on APIs.io
+
+Everything profiled for Tripgic is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/tripgic/](https://apis.io/providers/tripgic/)** — or go straight to one of the APIs or properties below.
+
+### APIs (8)
+
+- [Tripgic Activity API](https://apis.io/apis/tripgic/tripgic-activity-api/) — The Activity API from Tripgic — 1 operation(s) for activity.
+- [Tripgic Esim API](https://apis.io/apis/tripgic/tripgic-esim-api/) — The Esim API from Tripgic — 1 operation(s) for esim.
+- [Tripgic Flight API](https://apis.io/apis/tripgic/tripgic-flight-api/) — The Flight API from Tripgic — 1 operation(s) for flight.
+- [Tripgic Hotel API](https://apis.io/apis/tripgic/tripgic-hotel-api/) — The Hotel API from Tripgic — 1 operation(s) for hotel.
+- [Tripgic Service Tour API](https://apis.io/apis/tripgic/tripgic-service-tour-api/) — The Service Tour API from Tripgic — 1 operation(s) for service tour.
+- [Tripgic Train API](https://apis.io/apis/tripgic/tripgic-train-api/) — The Train API from Tripgic — 1 operation(s) for train.
+- [Tripgic Transfer API](https://apis.io/apis/tripgic/tripgic-transfer-api/) — The Transfer API from Tripgic — 1 operation(s) for transfer.
+- [Tripgic Visa API](https://apis.io/apis/tripgic/tripgic-visa-api/) — The Visa API from Tripgic — 1 operation(s) for visa.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (1)
+
+The data models the API reads and writes.
+
+- [PostFlightFlightidResponse](https://apis.io/schemas/tripgic/tripgic-post-flight-flightid-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Tripgic Context](https://apis.io/jsonld/tripgic/tripgic-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Tripgic API Rules](https://apis.io/rules/tripgic/tripgic-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Tripgic Domain Security](https://apis.io/security/tripgic/tripgic-domain-security/)
+- [Tripgic Trust Center](https://apis.io/security/tripgic/tripgic-trust-center/)
+- [Tripgic Vulnerability Disclosure](https://apis.io/security/tripgic/tripgic-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Tripgic Plans Pricing](https://apis.io/plans/tripgic/tripgic-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.tripgic.com/)
+- [Documentation](https://www.tripgic.com/docs.html)
+- [API reference](https://www.tripgic.com/docs.html)
+- [Pricing](https://www.tripgic.com/pricing.html)
+- [Support](https://www.tripgic.com/contact.html)
+- [Compliance](https://www.tripgic.com/security.html)
+- [Terms of service](https://www.tripgic.com/terms.html)
+- [Privacy policy](https://www.tripgic.com/privacy.html)
+
+## API Evangelist rating
+
+**Kin Score 40.7** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 69.6 |
+| Contract quality | 17.0 |
+| Contract governance | 22.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 31.0 |
+| Access clarity | 78.9 |
+
+**Agent readiness 15.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/tripgic/](https://apis.io/providers/tripgic/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Tripgic: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/tripgic/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
